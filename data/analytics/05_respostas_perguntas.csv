@@ -1,0 +1,7 @@
+﻿id,pergunta,resposta,estado
+Q1,Onde há mais inscritos sem médico?,"CSP da ULS Amadora / Sintra: 194,681 inscritos sem médico em 2026-06.",respondida
+Q2,Onde a percentagem é maior e como se distribui por região?,CSP da ULS Estuário do Tejo: 47.74%. Rankings e tabelas geográficas guardados; inscritos são o denominador.,respondida
+Q3,Que unidades melhoraram ou pioraram?,"Nas 38 séries completas, 19 reduziram e 19 aumentaram a percentagem. Maior redução: CSP da ULS Cova da Beira (-15.09 pp); maior aumento: CSP da ULS Arrábida (13.22 pp).",respondida com restrição de continuidade
+Q4,Como evoluiu a cobertura regional?,As variações regionais foram calculadas a partir dos totais de todos os registos mensais. Ver 05_evolucao_regioes.csv; evolução não uniforme.,respondida
+Q5,Há associação com a utilização de consultas?,"Não avaliada nesta versão: falta confirmar a janela exata do indicador de um ano. Taxas preservadas, sem conclusões sobre consultas.",pendente de definição
+Q6,O histórico melhora a previsão do mês seguinte?,"A referência teve MAE 0.417 pp. O melhor candidato aprendido escolhido na validação (Regressão linear) teve MAE 0.449 pp no teste. A escolha final do 04 foi Último valor e não superou a referência. O critério preditivo não foi cumprido; os resultados dos candidatos estão na tabela, sem nova seleção pelo teste.",avaliada no teste reservado

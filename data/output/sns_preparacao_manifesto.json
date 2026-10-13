@@ -1,0 +1,84 @@
+{
+  "dataset": "utentes-inscritos-em-cuidados-de-saude-primarios",
+  "url_fonte": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/utentes-inscritos-em-cuidados-de-saude-primarios",
+  "recolhido_em_utc": "2026-10-13T17:20:14.911883+00:00",
+  "input_sha256": {
+    "utentes_csp_historico_bruto.csv": "7e11da2765db6354118a7c08bcd41d3b4b116caf91407c0debdec38eda566481",
+    "utentes_csp_metadados_api.json": "7a61c3990703102ab3cc0cb9935f73a41ce0f88afcaf3e0db2c779aa501d175e",
+    "utentes_csp_recolha.json": "a1e312b3e954250081c3b6eba2399a9ff4e4d47e4c67888c6fae50cac2ea357b"
+  },
+  "brutos_preservados": true,
+  "inicio_principal": "2024-01-01",
+  "fim_principal": "2026-06-01",
+  "linhas_historico": 6450,
+  "linhas_fora_periodo": 5280,
+  "linhas_principal": 1170,
+  "designacoes_principal": 40,
+  "linhas_series_completas": 1140,
+  "designacoes_series_completas": 38,
+  "linhas_sem_continuidade_confirmada": 30,
+  "linhas_pares": 1102,
+  "linhas_modelacao": 988,
+  "linhas_pares_sem_historico_suficiente": 114,
+  "inicio_teste_mes_alvo": "2026-01-01",
+  "validacao_sugerida_mes_alvo": {
+    "treino_ate": "2025-06-01",
+    "validacao_de": "2025-07-01",
+    "validacao_ate": "2025-12-01"
+  },
+  "variaveis_numericas_permitidas": [
+    "inscritos",
+    "sem_medico_pct",
+    "sem_medico_opcao_pct",
+    "sem_medico_pct_lag1",
+    "sem_medico_pct_lag3",
+    "sem_medico_pct_media3",
+    "variacao_sem_medico_pp",
+    "variacao_inscritos_pct",
+    "regiao_sem_medico_pct"
+  ],
+  "variaveis_categoricas_permitidas": [
+    "regiao_saude"
+  ],
+  "alvo": "alvo_sem_medico_pct",
+  "referencia": "previsao_ultimo_valor_pct",
+  "alvo_unidade": "percentagem dos inscritos; erro avaliado em pontos percentuais",
+  "transformacoes_ajustadas_em_todo_dataset": "nenhuma normalização ou codificação; faixas descritivas definidas no primeiro mês",
+  "pendencias": [
+    "Correspondência territorial das duas designações da Póvoa/Vila do Conde",
+    "Janela exata das taxas de consultas de um ano"
+  ],
+  "limites": [
+    "Continuidade do nome não garante continuidade territorial",
+    "Recolha atual pode incluir revisões históricas",
+    "Inscritos não são população residente",
+    "Previsão histórica do indicador antigo; não extrapolar para julho de 2026"
+  ],
+  "outputs": [
+    {
+      "ficheiro": "sns_csp_principal.csv",
+      "linhas": 1170,
+      "sha256": "9c2afb369547e50bd90cf7fbdf822efa7274cd0bce4dd245207923404eb93317"
+    },
+    {
+      "ficheiro": "sns_csp_series_completas.csv",
+      "linhas": 1140,
+      "sha256": "0b8122033e8cc7f5458f9f44156024a1be7b92a50aa4541052efabf3e97be3fb"
+    },
+    {
+      "ficheiro": "sns_csp_regional.csv",
+      "linhas": 150,
+      "sha256": "66c994dc4db2442c2fff88e98675bc4434f28326dcc2be58c03ee216c26d3295"
+    },
+    {
+      "ficheiro": "sns_csp_pares_mensais.csv",
+      "linhas": 1102,
+      "sha256": "b2238318693c589229328df8fa2af43fa6753ace258a7e1729041844a62ddca2"
+    },
+    {
+      "ficheiro": "sns_csp_modelacao.csv",
+      "linhas": 988,
+      "sha256": "33c641e05930742b1f471472476b1ff3ee00a0e39b8671d8974b54c57d9c1500"
+    }
+  ]
+}

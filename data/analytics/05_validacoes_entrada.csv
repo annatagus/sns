@@ -1,0 +1,10 @@
+﻿verificacao,passou
+Chaves de previsão únicas,True
+Pares de meses consecutivos,True
+Teste só nos meses reservados,True
+Todas as séries têm todos os meses de teste,True
+Observados correspondem ao mês-alvo preparado,True
+Referência repete o mês de origem,True
+Mesmas linhas e valores finitos nas três abordagens,True
+Seleção guardada corresponde à coluna selecionada,True
+Principal com chave única e categorias coerentes,True

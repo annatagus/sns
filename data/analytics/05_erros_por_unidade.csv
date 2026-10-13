@@ -1,0 +1,115 @@
+﻿regiao_saude,unidade_fonte,abordagem,meses,mae_pp,vies_pp
+Alentejo,CSP da ULS Alentejo Central,random_forest_b,6,0.8156856527092332,-0.8053423679682078
+Alentejo,CSP da ULS Alentejo Central,regressao_linear,6,0.7240919498324888,-0.466402217217812
+Alentejo,CSP da ULS Alentejo Central,ultimo_valor,6,0.6151742873379336,-0.29649394139914076
+Alentejo,CSP da ULS Alto Alentejo,random_forest_b,6,0.4841313619044178,0.08270677830047231
+Alentejo,CSP da ULS Alto Alentejo,regressao_linear,6,0.4632695482766079,-0.4632695482766079
+Alentejo,CSP da ULS Alto Alentejo,ultimo_valor,6,0.3382220301663968,-0.2755356638803346
+Alentejo,CSP da ULS Baixo Alentejo,random_forest_b,6,0.8421727742880151,-0.8421727742880151
+Alentejo,CSP da ULS Baixo Alentejo,regressao_linear,6,0.601048253303551,-0.601048253303551
+Alentejo,CSP da ULS Baixo Alentejo,ultimo_valor,6,0.35501226937525665,-0.34576627638971935
+Alentejo,CSP da ULS Litoral Alentejano,random_forest_b,6,1.1904195566330273,-0.8816146126962092
+Alentejo,CSP da ULS Litoral Alentejano,regressao_linear,6,1.380800598758303,-1.0105984245443072
+Alentejo,CSP da ULS Litoral Alentejano,ultimo_valor,6,1.2516680432604819,-0.7673664648633357
+Algarve,CSP da ULS Algarve,random_forest_b,6,0.7200350173084994,-0.7200350173084994
+Algarve,CSP da ULS Algarve,regressao_linear,6,0.7214795630294084,-0.7214795630294084
+Algarve,CSP da ULS Algarve,ultimo_valor,6,0.5482733476319405,-0.5482733476319405
+Centro,CSP da ULS Baixo Mondego,random_forest_b,6,0.1410257170484272,-0.022971379909312806
+Centro,CSP da ULS Baixo Mondego,regressao_linear,6,0.06071848802245464,0.05075567062574508
+Centro,CSP da ULS Baixo Mondego,ultimo_valor,6,0.04107318405248297,-0.04107318405248297
+Centro,CSP da ULS Castelo Branco,random_forest_b,6,0.7578261397144708,-0.40406473189668546
+Centro,CSP da ULS Castelo Branco,regressao_linear,6,0.43397131327530225,-0.24049585625995049
+Centro,CSP da ULS Castelo Branco,ultimo_valor,6,0.4789578562800987,-0.30035450505502875
+Centro,CSP da ULS Coimbra,random_forest_b,6,0.5601240387379777,0.06897438094300679
+Centro,CSP da ULS Coimbra,regressao_linear,6,0.5759008766390631,0.3379063972671504
+Centro,CSP da ULS Coimbra,ultimo_valor,6,0.5800476752786751,0.30433014997812746
+Centro,CSP da ULS Cova da Beira,random_forest_b,6,1.0362962952994847,-0.9286851112014191
+Centro,CSP da ULS Cova da Beira,regressao_linear,6,0.8701431539263261,-0.3006779677501852
+Centro,CSP da ULS Cova da Beira,ultimo_valor,6,0.896096056722348,-0.3567903617132074
+Centro,CSP da ULS Guarda,random_forest_b,6,1.463723342069413,-0.9973046974402969
+Centro,CSP da ULS Guarda,regressao_linear,6,1.051157793870323,-0.3956357370769273
+Centro,CSP da ULS Guarda,ultimo_valor,6,1.0508543548800864,-0.4344837254776784
+Centro,CSP da ULS Região de Aveiro,random_forest_b,6,0.48585942694860845,-0.29462097340164095
+Centro,CSP da ULS Região de Aveiro,regressao_linear,6,0.41686689394378057,-0.24595531689191316
+Centro,CSP da ULS Região de Aveiro,ultimo_valor,6,0.4311792010131686,-0.289626774803472
+Centro,CSP da ULS Região de Leiria,random_forest_b,6,0.333553218906441,-0.2841995345103516
+Centro,CSP da ULS Região de Leiria,regressao_linear,6,0.36305228866967515,-0.2130871860254017
+Centro,CSP da ULS Região de Leiria,ultimo_valor,6,0.37367279532057945,-0.2418665850262768
+Centro,CSP da ULS Viseu Dão-Lafões,random_forest_b,6,0.7212664873243773,-0.12965587011705146
+Centro,CSP da ULS Viseu Dão-Lafões,regressao_linear,6,0.6344572343109341,-0.10492700908355974
+Centro,CSP da ULS Viseu Dão-Lafões,ultimo_valor,6,0.686392875279667,-0.17662312983929296
+Lisboa e Vale do Tejo,CSP da ULS Almada / Seixal,random_forest_b,6,0.9969656275008104,-0.9969656275008104
+Lisboa e Vale do Tejo,CSP da ULS Almada / Seixal,regressao_linear,6,0.4963677020161598,-0.4963677020161598
+Lisboa e Vale do Tejo,CSP da ULS Almada / Seixal,ultimo_valor,6,0.446863689612132,-0.446863689612132
+Lisboa e Vale do Tejo,CSP da ULS Amadora / Sintra,random_forest_b,6,0.5576716811814967,0.26879435416092495
+Lisboa e Vale do Tejo,CSP da ULS Amadora / Sintra,regressao_linear,6,0.7951354756189742,-0.11033559541055205
+Lisboa e Vale do Tejo,CSP da ULS Amadora / Sintra,ultimo_valor,6,0.7436649239925686,3.357559037553415e-05
+Lisboa e Vale do Tejo,CSP da ULS Arco Ribeirinho,random_forest_b,6,0.7859764676467927,-0.7859764676467927
+Lisboa e Vale do Tejo,CSP da ULS Arco Ribeirinho,regressao_linear,6,0.5439797000532351,-0.5439797000532351
+Lisboa e Vale do Tejo,CSP da ULS Arco Ribeirinho,ultimo_valor,6,0.49689369153924307,-0.49689369153924307
+Lisboa e Vale do Tejo,CSP da ULS Arrábida,random_forest_b,6,1.6249586592751772,-1.6249586592751772
+Lisboa e Vale do Tejo,CSP da ULS Arrábida,regressao_linear,6,0.6008472711136813,-0.41617724007232937
+Lisboa e Vale do Tejo,CSP da ULS Arrábida,ultimo_valor,6,0.558812148209018,-0.3385007405908655
+Lisboa e Vale do Tejo,CSP da ULS Estuário do Tejo,random_forest_b,6,0.02639273865385879,-0.014921857578469163
+Lisboa e Vale do Tejo,CSP da ULS Estuário do Tejo,regressao_linear,6,0.2547827421789772,-0.2547827421789772
+Lisboa e Vale do Tejo,CSP da ULS Estuário do Tejo,ultimo_valor,6,0.20515802256113602,-0.17718970759873542
+Lisboa e Vale do Tejo,CSP da ULS Lezíria,random_forest_b,6,0.7597198067259198,-0.2707492610994369
+Lisboa e Vale do Tejo,CSP da ULS Lezíria,regressao_linear,6,0.5256434093465673,0.1532929432553439
+Lisboa e Vale do Tejo,CSP da ULS Lezíria,ultimo_valor,6,0.5524120464526163,0.21830238177281083
+Lisboa e Vale do Tejo,CSP da ULS Lisboa Ocidental,random_forest_b,6,0.43818621265641067,-0.195414922775521
+Lisboa e Vale do Tejo,CSP da ULS Lisboa Ocidental,regressao_linear,6,0.35330743909868456,-0.22071210456346702
+Lisboa e Vale do Tejo,CSP da ULS Lisboa Ocidental,ultimo_valor,6,0.3062569350054731,-0.13716608062738297
+Lisboa e Vale do Tejo,CSP da ULS Loures / Odivelas,random_forest_b,6,0.4400006666641569,-0.4400006666641569
+Lisboa e Vale do Tejo,CSP da ULS Loures / Odivelas,regressao_linear,6,0.3263069372333914,-0.3263069372333914
+Lisboa e Vale do Tejo,CSP da ULS Loures / Odivelas,ultimo_valor,6,0.280561285428855,-0.280561285428855
+Lisboa e Vale do Tejo,CSP da ULS Médio Tejo,random_forest_b,6,0.6741264046295447,-0.6741264046295447
+Lisboa e Vale do Tejo,CSP da ULS Médio Tejo,regressao_linear,6,0.26073497933792805,-0.26073497933792805
+Lisboa e Vale do Tejo,CSP da ULS Médio Tejo,ultimo_valor,6,0.21179783536068797,-0.21179783536068797
+Lisboa e Vale do Tejo,CSP da ULS Oeste,random_forest_b,6,0.4496906982724778,-0.054476073043707864
+Lisboa e Vale do Tejo,CSP da ULS Oeste,regressao_linear,6,0.26011936699105576,-0.08126093703490511
+Lisboa e Vale do Tejo,CSP da ULS Oeste,ultimo_valor,6,0.2109446300012602,-0.0202804700405963
+Lisboa e Vale do Tejo,CSP da ULS Santa Maria,random_forest_b,6,0.29970312163688817,-0.27670803729880095
+Lisboa e Vale do Tejo,CSP da ULS Santa Maria,regressao_linear,6,0.49311300172599104,-0.24018106009577522
+Lisboa e Vale do Tejo,CSP da ULS Santa Maria,ultimo_valor,6,0.5074392436016772,-0.10376100089532159
+Lisboa e Vale do Tejo,CSP da ULS São José,random_forest_b,6,0.8911849787438874,-0.656513651039111
+Lisboa e Vale do Tejo,CSP da ULS São José,regressao_linear,6,0.5389013582821475,-0.5240868793325136
+Lisboa e Vale do Tejo,CSP da ULS São José,ultimo_valor,6,0.4713059727425784,-0.45400265398831624
+Norte,CSP da ULS Alto Ave,random_forest_b,6,0.3224524829488626,0.2026221528404283
+Norte,CSP da ULS Alto Ave,regressao_linear,6,0.24103552065196143,0.04353287756618548
+Norte,CSP da ULS Alto Ave,ultimo_valor,6,0.20255429724675234,-0.00984035269870287
+Norte,CSP da ULS Alto Minho,random_forest_b,6,0.23175797642871196,0.21093282669242727
+Norte,CSP da ULS Alto Minho,regressao_linear,6,0.02071091258661852,0.0021530997640526275
+Norte,CSP da ULS Alto Minho,ultimo_valor,6,0.05808461650270073,-0.05808461650270073
+Norte,CSP da ULS Barcelos / Esposende,random_forest_b,6,0.08946966067257678,0.08946966067257678
+Norte,CSP da ULS Barcelos / Esposende,regressao_linear,6,0.06553083348524677,0.06553083348524677
+Norte,CSP da ULS Barcelos / Esposende,ultimo_valor,6,0.0007167899434454332,-0.0005118975222112333
+Norte,CSP da ULS Braga,random_forest_b,6,0.17738430426308452,-0.13477084348906743
+Norte,CSP da ULS Braga,regressao_linear,6,0.161030885906438,-0.161030885906438
+Norte,CSP da ULS Braga,ultimo_valor,6,0.20198784019776914,-0.20198784019776914
+Norte,CSP da ULS Entre Douro e Vouga,random_forest_b,6,0.3566095705204466,0.10553728801861699
+Norte,CSP da ULS Entre Douro e Vouga,regressao_linear,6,0.29136787970345973,-0.08005152056150903
+Norte,CSP da ULS Entre Douro e Vouga,ultimo_valor,6,0.28646857498035155,-0.11941776654313015
+Norte,CSP da ULS Gaia / Espinho,random_forest_b,6,0.21196804960316662,-0.00593149016755401
+Norte,CSP da ULS Gaia / Espinho,regressao_linear,6,0.20009923821509257,-0.0028949494930797424
+Norte,CSP da ULS Gaia / Espinho,ultimo_valor,6,0.18530484211332995,-0.03635742320214833
+Norte,CSP da ULS Matosinhos,random_forest_b,6,0.6035924427524235,0.2624138293322825
+Norte,CSP da ULS Matosinhos,regressao_linear,6,0.45737806617442445,0.11923122927761436
+Norte,CSP da ULS Matosinhos,ultimo_valor,6,0.47522823771103084,0.05622178850605419
+Norte,CSP da ULS Médio Ave,random_forest_b,6,0.2839809700268017,0.2702936224266042
+Norte,CSP da ULS Médio Ave,regressao_linear,6,0.16890618368662802,0.16890618368662802
+Norte,CSP da ULS Médio Ave,ultimo_valor,6,0.11496576259837295,0.11143618385515931
+Norte,CSP da ULS Nordeste,random_forest_b,6,0.3007799003283363,-0.04130482524200274
+Norte,CSP da ULS Nordeste,regressao_linear,6,0.1850077656948473,-0.1306275731594242
+Norte,CSP da ULS Nordeste,ultimo_valor,6,0.17306618554046763,-0.15031067714970667
+Norte,CSP da ULS Santo António,random_forest_b,6,0.5692020268261191,0.4334597280808637
+Norte,CSP da ULS Santo António,regressao_linear,6,0.4352970449524954,0.3019557525818853
+Norte,CSP da ULS Santo António,ultimo_valor,6,0.4284015258587493,0.2617638383172685
+Norte,CSP da ULS São João,random_forest_b,6,0.29355819253291066,0.2736762477530162
+Norte,CSP da ULS São João,regressao_linear,6,0.46273327176090917,0.28926254406073054
+Norte,CSP da ULS São João,ultimo_valor,6,0.46321345910318373,0.24321886974972115
+Norte,CSP da ULS Trás-os-Montes Alto Douro,random_forest_b,6,0.8857898836377571,-0.8857898836377571
+Norte,CSP da ULS Trás-os-Montes Alto Douro,regressao_linear,6,0.2838251920201131,-0.13887654575500732
+Norte,CSP da ULS Trás-os-Montes Alto Douro,ultimo_valor,6,0.28362294138078753,-0.1635096589612758
+Norte,CSP da ULS Tâmega e Sousa,random_forest_b,6,0.29872507042406643,0.115247523763846
+Norte,CSP da ULS Tâmega e Sousa,regressao_linear,6,0.3396957658467901,0.029135668220342203
+Norte,CSP da ULS Tâmega e Sousa,ultimo_valor,6,0.3471990251524422,0.00017131577066009074

@@ -1,0 +1,7 @@
+﻿dimensao,criterio,resultado,observacao
+Resposta ao problema,Q1 a Q4 respondidas; Q5 condicional; Q6 avaliada,cumprido no âmbito definido,Q5 pendente de definição; quatro hipóteses avaliadas com limites explícitos.
+Qualidade dos dados,"Chaves, meses, categorias e observados coerentes",cumprido nesta recolha,Verificações aprovadas; nenhuma correção silenciosa nesta fase.
+Comparabilidade,Recorte e correspondências documentados,cumprido com restrições,2024–2026; 38 séries na evolução/previsão; duas designações não ligadas sem confirmação.
+Reprodutibilidade,"Fonte, entrada, seleção e transformações rastreáveis",cumprido na execução verificada,Assinaturas e resultados guardados; executar sobre os ficheiros locais do 03/04.
+Previsão,Abordagem selecionada com MAE inferior ao último valor,não cumprido neste teste,"A referência teve MAE 0.417 pp. O melhor candidato aprendido escolhido na validação (Regressão linear) teve MAE 0.449 pp no teste. A escolha final do 04 foi Último valor e não superou a referência. O critério preditivo não foi cumprido; os resultados dos candidatos estão na tabela, sem nova seleção pelo teste."
+Interpretação,"Ganho, erros por mês/unidade e limites apresentados",cumprido,Não atribuir causa às associações nem extrapolar para o indicador novo.

@@ -1,0 +1,9 @@
+{
+  "mes_referencia": "2024-01",
+  "variavel": "inscritos",
+  "metodo": "tercis comuns do primeiro mês do recorte",
+  "limite_1": 194226.3333333333,
+  "limite_2": 327435.3333333333,
+  "regra": "menor: inscritos <= limite_1; intermedia: limite_1 < inscritos <= limite_2; maior: inscritos > limite_2",
+  "aviso_grupo_pequeno": "menos de 3 unidades; critério descritivo, sem garantia de suficiência estatística"
+}

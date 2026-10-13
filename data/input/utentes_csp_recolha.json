@@ -1,0 +1,16 @@
+{
+  "dataset": "utentes-inscritos-em-cuidados-de-saude-primarios",
+  "url_metadados": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/utentes-inscritos-em-cuidados-de-saude-primarios",
+  "url_csv": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/utentes-inscritos-em-cuidados-de-saude-primarios/exports/csv?order_by=periodo+ASC%2C+ars+ASC%2C+aces+ASC",
+  "parametros": {
+    "order_by": "periodo ASC, ars ASC, aces ASC"
+  },
+  "recolhido_em_utc": "2026-10-13T17:20:14.911883+00:00",
+  "estado_http_metadados": 200,
+  "estado_http_csv": 200,
+  "content_type": "text/csv; charset=utf-8",
+  "metodo": "API oficial - exportação do histórico completo sem filtro temporal",
+  "sha256_csv": "7e11da2765db6354118a7c08bcd41d3b4b116caf91407c0debdec38eda566481",
+  "sha256_metadados": "7a61c3990703102ab3cc0cb9935f73a41ce0f88afcaf3e0db2c779aa501d175e",
+  "bytes_csv": 764093
+}

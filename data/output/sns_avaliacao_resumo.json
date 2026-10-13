@@ -1,0 +1,204 @@
+{
+  "periodo_principal": {
+    "inicio": "2024-01",
+    "fim": "2026-06"
+  },
+  "recolhido_em_utc": "2026-10-13T17:20:14.911883+00:00",
+  "teste": {
+    "primeiro_mes_alvo": "2026-01",
+    "ultimo_mes_alvo": "2026-06",
+    "linhas": 228,
+    "unidades": 38
+  },
+  "selecionado_no_04": "ultimo_valor",
+  "selecao_mantida": true,
+  "metricas_teste": [
+    {
+      "abordagem": "ultimo_valor",
+      "selecionado_no_04": true,
+      "linhas": 228,
+      "mae_pp": 0.41735653945883544,
+      "rmse_pp": 0.6793432601325131,
+      "vies_pp": -0.16541613802767144,
+      "mediana_erro_absoluto_pp": 0.1920229359240455,
+      "p90_erro_absoluto_pp": 1.0649289017019101,
+      "maximo_erro_absoluto_pp": 3.3481740009190375,
+      "ganho_face_referencia_pp": 0.0,
+      "reducao_erro_pct": 0.0
+    },
+    {
+      "abordagem": "regressao_linear",
+      "selecionado_no_04": false,
+      "linhas": 228,
+      "mae_pp": 0.4489162078826325,
+      "rmse_pp": 0.696505404431708,
+      "vies_pp": -0.18921897978614186,
+      "mediana_erro_absoluto_pp": 0.27194584818265,
+      "p90_erro_absoluto_pp": 1.0329454468360786,
+      "maximo_erro_absoluto_pp": 3.6297657006974156,
+      "ganho_face_referencia_pp": -0.03155966842379704,
+      "reducao_erro_pct": -7.561800388875858
+    },
+    {
+      "abordagem": "random_forest_b",
+      "selecionado_no_04": false,
+      "linhas": 228,
+      "mae_pp": 0.5821570164064493,
+      "rmse_pp": 0.8416212926816781,
+      "vies_pp": -0.2890828249694877,
+      "mediana_erro_absoluto_pp": 0.37627673020813734,
+      "p90_erro_absoluto_pp": 1.4109184383258992,
+      "maximo_erro_absoluto_pp": 3.4198448615691106,
+      "ganho_face_referencia_pp": -0.1648004769476139,
+      "reducao_erro_pct": -39.48673648705783
+    }
+  ],
+  "ganho_selecionado_pp": 0.0,
+  "criterio_preditivo_cumprido": false,
+  "decisao_previsao": "Manter a referência simples como comparação principal; não foi demonstrado ganho da abordagem selecionada. Disponibilizar também os resultados dos modelos para transparência.",
+  "h1": {
+    "posicoes_diferentes": 35,
+    "spearman_rankings": 0.9380566801619434
+  },
+  "h2": {
+    "series_completas": 38,
+    "com_reducao": 19,
+    "com_aumento": 19
+  },
+  "h3": {
+    "spearman_variacoes": 0.22464164569427728,
+    "unidades": 38
+  },
+  "h4": {
+    "pares_elegiveis_nos_30_meses": 7,
+    "grupos_pequenos_ultimo_mes": 3,
+    "leitura": "Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado."
+  },
+  "perguntas": [
+    {
+      "id": "Q1",
+      "pergunta": "Onde há mais inscritos sem médico?",
+      "resposta": "CSP da ULS Amadora / Sintra: 194,681 inscritos sem médico em 2026-06.",
+      "estado": "respondida"
+    },
+    {
+      "id": "Q2",
+      "pergunta": "Onde a percentagem é maior e como se distribui por região?",
+      "resposta": "CSP da ULS Estuário do Tejo: 47.74%. Rankings e tabelas geográficas guardados; inscritos são o denominador.",
+      "estado": "respondida"
+    },
+    {
+      "id": "Q3",
+      "pergunta": "Que unidades melhoraram ou pioraram?",
+      "resposta": "Nas 38 séries completas, 19 reduziram e 19 aumentaram a percentagem. Maior redução: CSP da ULS Cova da Beira (-15.09 pp); maior aumento: CSP da ULS Arrábida (13.22 pp).",
+      "estado": "respondida com restrição de continuidade"
+    },
+    {
+      "id": "Q4",
+      "pergunta": "Como evoluiu a cobertura regional?",
+      "resposta": "As variações regionais foram calculadas a partir dos totais de todos os registos mensais. Ver 05_evolucao_regioes.csv; evolução não uniforme.",
+      "estado": "respondida"
+    },
+    {
+      "id": "Q5",
+      "pergunta": "Há associação com a utilização de consultas?",
+      "resposta": "Não avaliada nesta versão: falta confirmar a janela exata do indicador de um ano. Taxas preservadas, sem conclusões sobre consultas.",
+      "estado": "pendente de definição"
+    },
+    {
+      "id": "Q6",
+      "pergunta": "O histórico melhora a previsão do mês seguinte?",
+      "resposta": "A referência teve MAE 0.417 pp. O melhor candidato aprendido escolhido na validação (Regressão linear) teve MAE 0.449 pp no teste. A escolha final do 04 foi Último valor e não superou a referência. O critério preditivo não foi cumprido; os resultados dos candidatos estão na tabela, sem nova seleção pelo teste.",
+      "estado": "avaliada no teste reservado"
+    }
+  ],
+  "hipoteses": [
+    {
+      "id": "H1",
+      "hipotese": "Rankings por número e percentagem diferem",
+      "evidencia": "35 de 39 posições diferem; Spearman 0.938.",
+      "avaliacao": "sustentada no último mês"
+    },
+    {
+      "id": "H2",
+      "hipotese": "Evolução não uniforme",
+      "evidencia": "19 séries com redução e 19 com aumento; variações regionais diferentes.",
+      "avaliacao": "diferenças descritivas observadas"
+    },
+    {
+      "id": "H3",
+      "hipotese": "Crescimento dos inscritos associado ao aumento sem médico",
+      "evidencia": "Spearman das variações: 0.225, em 38 séries. A direção observada não demonstra causa nem uma relação mensal geral.",
+      "avaliacao": "evidência de associação limitada"
+    },
+    {
+      "id": "H4",
+      "hipotese": "Diferenças geográficas em unidades de dimensão semelhante",
+      "evidencia": "Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado.",
+      "avaliacao": "evidência descritiva condicionada"
+    }
+  ],
+  "criterios": [
+    {
+      "dimensao": "Resposta ao problema",
+      "criterio": "Q1 a Q4 respondidas; Q5 condicional; Q6 avaliada",
+      "resultado": "cumprido no âmbito definido",
+      "observacao": "Q5 pendente de definição; quatro hipóteses avaliadas com limites explícitos."
+    },
+    {
+      "dimensao": "Qualidade dos dados",
+      "criterio": "Chaves, meses, categorias e observados coerentes",
+      "resultado": "cumprido nesta recolha",
+      "observacao": "Verificações aprovadas; nenhuma correção silenciosa nesta fase."
+    },
+    {
+      "dimensao": "Comparabilidade",
+      "criterio": "Recorte e correspondências documentados",
+      "resultado": "cumprido com restrições",
+      "observacao": "2024–2026; 38 séries na evolução/previsão; duas designações não ligadas sem confirmação."
+    },
+    {
+      "dimensao": "Reprodutibilidade",
+      "criterio": "Fonte, entrada, seleção e transformações rastreáveis",
+      "resultado": "cumprido na execução verificada",
+      "observacao": "Assinaturas e resultados guardados; executar sobre os ficheiros locais do 03/04."
+    },
+    {
+      "dimensao": "Previsão",
+      "criterio": "Abordagem selecionada com MAE inferior ao último valor",
+      "resultado": "não cumprido neste teste",
+      "observacao": "A referência teve MAE 0.417 pp. O melhor candidato aprendido escolhido na validação (Regressão linear) teve MAE 0.449 pp no teste. A escolha final do 04 foi Último valor e não superou a referência. O critério preditivo não foi cumprido; os resultados dos candidatos estão na tabela, sem nova seleção pelo teste."
+    },
+    {
+      "dimensao": "Interpretação",
+      "criterio": "Ganho, erros por mês/unidade e limites apresentados",
+      "resultado": "cumprido",
+      "observacao": "Não atribuir causa às associações nem extrapolar para o indicador novo."
+    }
+  ],
+  "pendencias": [
+    "Correspondência territorial da Póvoa/Vila do Conde",
+    "Janela exata das taxas de consultas de um ano"
+  ],
+  "limites": [
+    "Histórico antigo; sem extrapolação para julho de 2026",
+    "38 séries completas na evolução/previsão",
+    "Nomes estáveis não comprovam território estável",
+    "Recolha atual pode incluir revisões",
+    "Meses e unidades não são observações independentes",
+    "Faixas de dimensão aproximadas e grupos pequenos na H4",
+    "Inscritos não são população residente; sem médico por opção separado",
+    "Resultados descritivos não identificam causas"
+  ],
+  "input_sha256": {
+    "data/output/sns_csp_principal.csv": "9c2afb369547e50bd90cf7fbdf822efa7274cd0bce4dd245207923404eb93317",
+    "data/output/sns_csp_series_completas.csv": "0b8122033e8cc7f5458f9f44156024a1be7b92a50aa4541052efabf3e97be3fb",
+    "data/output/sns_csp_regional.csv": "66c994dc4db2442c2fff88e98675bc4434f28326dcc2be58c03ee216c26d3295",
+    "data/output/sns_faixas_dimensao.json": "1e44d02a675744c1496cab5dfd8c0e4bca56cf22985389e1dc65a603d743c1b1",
+    "data/output/sns_preparacao_manifesto.json": "f68543981c5aaecc0f9905fe79deaf52acf3fc4d3aa38caa7bade84c1a8de6a9",
+    "data/output/sns_previsoes_teste.csv": "d827cae73f124e9e2d72d704a61e6da57407df7eeaafcf44517e658c0a11d601",
+    "data/models/04_selecao_modelo.json": "820bec211db94d5d472a19578295fd04cfa38f08b6fb600c817f2aa252245273",
+    "data/models/04_execucao_modelacao.json": "3ec124459362c7d89b04f785e32ef9df930066ebdfcada7868df37b6bd997c3d"
+  },
+  "entradas_preservadas": true
+}

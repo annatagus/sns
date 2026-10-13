@@ -1,0 +1,8 @@
+# Versões registadas na execução do 04; matplotlib usado no 06.
+# Python da modelação: 3.14.7.
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+ipykernel>=6

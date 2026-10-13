@@ -1,0 +1,11 @@
+﻿verificacao,passou
+Chave mensal única no principal,True
+30 meses e 39 registos por mês no principal,True
+Séries completas com todos os meses,True
+Alvo exatamente no mês seguinte,True
+Variáveis do modelo e alvo sem valores em falta,True
+Variáveis numéricas do modelo finitas,True
+Desenvolvimento termina antes do teste,True
+Teste tem os 6 meses-alvo previstos,True
+Referência e modelos têm as mesmas chaves no teste,True
+Percentagens principais entre 0 e 100,True

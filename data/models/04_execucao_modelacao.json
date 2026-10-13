@@ -1,0 +1,73 @@
+{
+  "versoes": {
+    "python": "3.14.7",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "input_sha256": {
+    "sns_csp_modelacao.csv": "33c641e05930742b1f471472476b1ff3ee00a0e39b8671d8974b54c57d9c1500",
+    "sns_preparacao_manifesto.json": "f68543981c5aaecc0f9905fe79deaf52acf3fc4d3aa38caa7bade84c1a8de6a9"
+  },
+  "blocos": [
+    {
+      "bloco": "treino_inicial",
+      "linhas": 532,
+      "unidades": 38,
+      "primeiro_mes_alvo": "2024-05-01",
+      "ultimo_mes_alvo": "2025-06-01"
+    },
+    {
+      "bloco": "validacao",
+      "linhas": 228,
+      "unidades": 38,
+      "primeiro_mes_alvo": "2025-07-01",
+      "ultimo_mes_alvo": "2025-12-01"
+    },
+    {
+      "bloco": "desenvolvimento_completo",
+      "linhas": 760,
+      "unidades": 38,
+      "primeiro_mes_alvo": "2024-05-01",
+      "ultimo_mes_alvo": "2025-12-01"
+    },
+    {
+      "bloco": "teste_reservado",
+      "linhas": 228,
+      "unidades": 38,
+      "primeiro_mes_alvo": "2026-01-01",
+      "ultimo_mes_alvo": "2026-06-01"
+    }
+  ],
+  "parametros": {
+    "regressao_linear": {
+      "fit_intercept": true,
+      "normalizacao": "StandardScaler ajustado no treino"
+    },
+    "random_forest_a": {
+      "n_estimators": 150,
+      "max_depth": 6,
+      "min_samples_leaf": 5,
+      "random_state": 42,
+      "n_jobs": 1
+    },
+    "random_forest_b": {
+      "n_estimators": 150,
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "random_state": 42,
+      "n_jobs": 1
+    }
+  },
+  "selecionado": "ultimo_valor",
+  "configuracao_rf_selecionada": "random_forest_b",
+  "metricas_teste_calculadas": false,
+  "resultados_sha256": {
+    "data\\models\\04_selecao_modelo.json": "820bec211db94d5d472a19578295fd04cfa38f08b6fb600c817f2aa252245273",
+    "data\\output\\sns_previsoes_validacao.csv": "5c487fa476216dbd5e7bacb1eb22dcf015210999963c519ecf2673f529466ba2",
+    "data\\output\\sns_previsoes_teste.csv": "d827cae73f124e9e2d72d704a61e6da57407df7eeaafcf44517e658c0a11d601",
+    "data\\models\\04_regressao_linear.joblib": "f5a21a6c6e795aab618f5aeb089baa945aceaaf3d5384081c946380cba914093",
+    "data\\models\\04_random_forest_b.joblib": "f3923a68599ed26803e706f8fb930ba0aa50a2516a9deac4c21eacfc1d675869"
+  }
+}

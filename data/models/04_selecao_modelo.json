@@ -1,0 +1,39 @@
+{
+  "criterio": "menor MAE na validação temporal; incluir a referência; empate favorece simplicidade",
+  "tolerancia_empate_pp": 1e-10,
+  "selecionado": "ultimo_valor",
+  "melhor_candidato_aprendido": "regressao_linear",
+  "configuracao_rf_selecionada": "random_forest_b",
+  "mae_referencia_validacao_pp": 0.6892675635409606,
+  "mae_selecionado_validacao_pp": 0.6892675635409606,
+  "ganho_validacao_pp": 0.0,
+  "variaveis_numericas": [
+    "inscritos",
+    "sem_medico_pct",
+    "sem_medico_opcao_pct",
+    "sem_medico_pct_lag1",
+    "sem_medico_pct_lag3",
+    "sem_medico_pct_media3",
+    "variacao_inscritos_pct",
+    "regiao_sem_medico_pct"
+  ],
+  "variaveis_categoricas": [
+    "regiao_saude"
+  ],
+  "variavel_retirada": {
+    "variacao_sem_medico_pp": "combinação exata da percentagem atual e lag1; ambas já entram"
+  },
+  "alvo": "alvo_sem_medico_pct",
+  "semente": 42,
+  "limites_previsao": [
+    0,
+    100
+  ],
+  "treino_inicial_ultimo_mes_alvo": "2025-06-01",
+  "validacao_primeiro_mes_alvo": "2025-07-01",
+  "validacao_ultimo_mes_alvo": "2025-12-01",
+  "desenvolvimento_ultimo_mes_alvo": "2025-12-01",
+  "teste_primeiro_mes_alvo": "2026-01-01",
+  "teste_ultimo_mes_alvo": "2026-06-01",
+  "metricas_teste_calculadas_nesta_fase": false
+}

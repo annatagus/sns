@@ -1,0 +1,23 @@
+{
+  "data_recolha_utc": "2026-10-13T17:20:14.911883+00:00",
+  "linhas_historico": 6450,
+  "colunas_historico": 13,
+  "meses_historico": 126,
+  "linhas_vista_principal": 1170,
+  "meses_vista_principal": 30,
+  "designacoes_vista_principal": 40,
+  "designacoes_completas": 38,
+  "duplicados_chave": 0,
+  "linhas_divergentes_categorias": 0,
+  "correlacao_rankings_h1": 0.9382,
+  "correlacao_variacoes_h3": 0.2249,
+  "grupos_pequenos_h4": 3,
+  "pendencias_fase_3": [
+    "Confirmar a correspondência territorial das designações da ULS Póvoa Varzim / Vila Conde e Vila do Conde.",
+    "Implementar D01: recorte de janeiro de 2024 a junho de 2026, com contagens antes e depois.",
+    "Definir nomes de colunas, tipos e chave mensal do dataset preparado.",
+    "Investigar qualquer ocorrência dos checks antes de decidir corrigir, excluir ou manter.",
+    "Confirmar a definição das taxas de utilização de consultas de um ano antes de responder à Q5.",
+    "Reavaliar grupos pequenos da H4 e verificar a consistência temporal da comparação geográfica."
+  ]
+}

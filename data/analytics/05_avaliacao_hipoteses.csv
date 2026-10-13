@@ -1,0 +1,5 @@
+﻿id,hipotese,evidencia,avaliacao
+H1,Rankings por número e percentagem diferem,35 de 39 posições diferem; Spearman 0.938.,sustentada no último mês
+H2,Evolução não uniforme,19 séries com redução e 19 com aumento; variações regionais diferentes.,diferenças descritivas observadas
+H3,Crescimento dos inscritos associado ao aumento sem médico,"Spearman das variações: 0.225, em 38 séries. A direção observada não demonstra causa nem uma relação mensal geral.",evidência de associação limitada
+H4,Diferenças geográficas em unidades de dimensão semelhante,"Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado.",evidência descritiva condicionada

@@ -1,0 +1,8 @@
+﻿faixa_dimensao,regiao_a,regiao_b,meses_comparaveis,meses_b_acima_a,meses_b_abaixo_a,diferenca_mediana_pp,todos_os_meses
+intermedia,Lisboa e Vale do Tejo,Norte,30,0,30,-33.78589533604685,True
+maior,Centro,Lisboa e Vale do Tejo,30,30,0,15.871207885106445,True
+maior,Centro,Norte,30,0,30,-5.244277205902888,True
+maior,Lisboa e Vale do Tejo,Norte,30,0,30,-21.91510745940328,True
+menor,Alentejo,Centro,30,7,23,-6.027786222087783,True
+menor,Alentejo,Norte,30,0,30,-15.364741572339128,True
+menor,Centro,Norte,30,0,30,-9.866808104148864,True

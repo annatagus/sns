@@ -1,0 +1,12 @@
+﻿verificacao,ocorrencias
+Células em falta,0
+Células com texto vazio,0
+Linhas inteiras duplicadas,0
+Linhas com chave duplicada,0
+Datas inválidas,0
+Falhas de conversão numérica,0
+Valores numéricos negativos,0
+Percentagens fora de 0 a 100,0
+Linhas com inscritos diferentes da soma das categorias,0
+"Diferenças de percentagem superiores a 0,01 pp",0
+Linhas com inscritos iguais ou inferiores a zero,0

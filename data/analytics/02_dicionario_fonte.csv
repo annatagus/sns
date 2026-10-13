@@ -1,0 +1,14 @@
+﻿campo,rotulo_fonte,tipo_fonte,presente_no_csv
+periodo,Período,date,True
+ars,ARS/Região,text,True
+aces,ACES/ULS,text,True
+localizacao_geografica,Localização Geográfica,geo_point_2d,True
+utentes_inscritos_csp,Utentes Inscritos CSP,int,True
+total_utentes_com_mdf_atribuido,Total Utentes com MdF atribuído,int,True
+total_utentes_com_mdf_atribuido0,% Total Utentes com MdF atribuído,double,True
+total_utentes_sem_mdf_atribuido,Total Utentes sem MdF Atribuído,int,True
+total_utentes_sem_mdf_atribuido0,% Total Utentes sem MdF Atribuído,double,True
+total_utentes_sem_mdf_atribuido_por_opcao,Total Utentes sem MdF Atribuído por Opção,int,True
+total_utentes_sem_mdf_atribuido_por_opcao0,% Total Utentes sem MdF Atribuído por Opção,double,True
+taxa_de_utilizacao_consultas_medicas_1_ano_todos_os_utentes,Taxa de Utilização Consultas Médicas 1 Ano (Todos os Utentes),double,True
+taxa_de_utilizacao_consultas_medicas_1_ano_nos_utentes_sem_mdf,Taxa de Utilização Consultas Médicas 1 Ano (Nos Utentes sem MdF),double,True

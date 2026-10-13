@@ -1,0 +1,7 @@
+﻿verificacao,passou
+MAE do resumo coincide com as previsões: ultimo_valor,True
+MAE do resumo coincide com as previsões: regressao_linear,True
+MAE do resumo coincide com as previsões: random_forest_b,True
+Seleção mantida desde o 04,True
+Período do resumo coincide com o principal,True
+Principal sem chaves duplicadas,True

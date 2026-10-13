@@ -1,0 +1,6 @@
+﻿verificacao,passou
+Modelo guardado reproduz previsões: regressao_linear,True
+Modelo guardado reproduz previsões: random_forest_b,True
+Entradas do 03 preservadas,True
+Mesmas linhas para todas as abordagens de teste,True
+Seleção usa apenas métricas de validação,True
