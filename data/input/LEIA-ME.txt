@@ -1,2 +1,12 @@
-Colocar aqui o dataset original (nunca alterar este ficheiro).
-Criar também as pastas Data/output, Data/analytics e Data/models (ou deixar o notebook 02 criá-las).
+Dados brutos da recolha (não alterar estes ficheiros):
+
+- utentes_csp_historico_bruto.csv  -> CSV original exportado pela API do Portal da Transparência do SNS
+- utentes_csp_metadados_api.json   -> metadados do dataset publicados pela API
+- utentes_csp_recolha.json         -> data, parâmetros e assinaturas SHA-256 da recolha
+
+Os notebooks verificam as assinaturas antes de usar os dados. Para fazer uma
+recolha nova, usar outra pasta (por exemplo data/input/recolha_nova/) e
+conservar esta.
+
+As pastas data/output, data/analytics e data/models são criadas pelos
+notebooks quando faltarem.

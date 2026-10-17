@@ -1,26 +1,52 @@
-# Fase 2 — Como executar
+# Fase 2 — Entendimento dos dados: como executar
 
-O pacote contém apenas os ficheiros da fase 2. A primeira fase e os restantes ficheiros do teu repositório devem ser mantidos.
+Notebook: [`notebooks/02_data_understanding.ipynb`](../notebooks/02_data_understanding.ipynb)
 
-1. Extrair o ZIP para uma pasta temporária.
-2. Copiar o conteúdo das pastas `notebooks`, `src`, `data` e `docs` para as pastas com os mesmos nomes na raiz do projeto. Conservar o `01_business_understanding.ipynb` existente.
-3. Abrir a raiz do projeto no VS Code e selecionar o kernel Python.
-4. Se faltarem bibliotecas, executar `%pip install pandas matplotlib` numa célula temporária do kernel.
-5. Abrir `notebooks/02_data_understanding.ipynb` e executar as células por ordem. O notebook entregue contém os resultados da execução de verificação.
+## Objetivo
 
-## Dados e reprodutibilidade
+Recolher (ou reutilizar) o histórico do indicador pela API oficial do SNS, confirmar a estrutura e a qualidade dos dados e explorar as perguntas Q1–Q4 e as hipóteses H1–H4 antes da preparação.
 
-O pacote inclui uma recolha real da API de 13 de outubro de 2026. O histórico tem 6 450 linhas e 126 meses. O módulo em `src/recolha_sns.py` reutiliza a recolha e verifica as somas de verificação para evitar alterar os dados brutos.
+## Entradas
 
-Para fazer uma recolha própria nova, alterar `PASTA_INPUT` para uma pasta ainda vazia, por exemplo `raiz / "data" / "input" / "recolha_nova"`, e executar desde o início. Conservar a recolha anterior. As alterações publicadas pela fonte podem fazer variar os resultados.
+| Ficheiro | Origem |
+|---|---|
+| `data/input/utentes_csp_historico_bruto.csv` | CSV original exportado pela API |
+| `data/input/utentes_csp_metadados_api.json` | Metadados publicados pela API |
+| `data/input/utentes_csp_recolha.json` | Data, parâmetros e assinaturas SHA-256 da recolha |
+| `src/recolha_sns.py` | Função `recolher_historico` |
 
-Os ficheiros de `data/input` não devem ser editados. As tabelas e gráficos da exploração ficam em `data/analytics`. Os dados preparados em `data/output` e os modelos em `data/models` serão produzidos em fases posteriores.
+Se os três ficheiros de `data/input/` existirem, são **reutilizados** depois de verificar as assinaturas; o notebook não volta à API. Se a pasta estiver vazia, é feita uma recolha nova.
 
-## O que rever agora
+## Saídas
 
-- Secções 1 a 4: fonte, dicionário, leitura e qualidade numérica.
-- Secções 5 e 6: mudança de estrutura em 2024 e continuidade dos nomes no recorte.
-- Secções 7 a 10: exploração das hipóteses, com limitações explícitas.
-- Secção 11: pendências para a preparação dos dados.
+- `data/analytics/02_*.csv` e `02_*.png` — dicionário, perfil das colunas, qualidade, cobertura mensal, continuidade, rankings, evolução e gráficos exploratórios.
+- `data/analytics/02_resumo_exploracao.json` — resumo numérico da exploração.
+- `docs/02_constatacoes_e_pendencias.md` — constatações e pendências para a fase 3 (gerado pelo notebook).
 
-A correspondência de nomes da ULS Póvoa de Varzim/Vila do Conde ainda precisa de validação. A comparação geográfica inclui grupos pequenos e não estabelece causalidade. A definição das taxas de consultas de um ano continua pendente antes de analisar a Q5.
+## Executar
+
+1. Abrir a raiz do repositório no VS Code e selecionar o kernel `.venv` (ver [README](../README.md#-como-executar-o-projeto)).
+2. Abrir o notebook e executar com **Run All**.
+
+Bibliotecas: `pandas` e `matplotlib`.
+
+## Verificar
+
+- Secções 1 a 4: fonte, dicionário, leitura e qualidade numérica (todas as verificações com 0 ocorrências).
+- Secções 5 e 6: passagem de 55 para 39 unidades em janeiro de 2024 e continuidade dos nomes no recorte.
+- Secções 7 a 10: exploração das hipóteses, com as limitações explícitas.
+- Secção 11: pendências para a preparação.
+
+Valores esperados com a recolha de 13 de outubro de 2026: **6 450 linhas**, **126 meses** no histórico; **1 170 linhas** e **30 meses** no recorte de 2024-01 a 2026-06.
+
+## Fazer uma recolha nova
+
+Não substituir os ficheiros de `data/input/`. Alterar `PASTA_INPUT` na primeira célula de código para uma pasta vazia (por exemplo `raiz / "data" / "input" / "recolha_nova"`) e executar desde o início. Os notebooks seguintes leem `data/input/`; antes de os executar com a recolha nova, rever as decisões de continuidade do 02 e apontar o 03 para a nova pasta. A fonte pode ter revisto valores, pelo que os resultados podem mudar.
+
+## Erros comuns
+
+| Mensagem | Causa provável e solução |
+|---|---|
+| `O ficheiro bruto foi alterado … Apenas os finais de linha diferem` | O Git converteu CRLF/LF no checkout. Atualizar o repositório (`git pull`) para obter o `.gitattributes`; se persistir, repor os ficheiros com `git checkout HEAD -- data` (substitui alterações locais em `data/`). |
+| `O ficheiro bruto foi alterado` | O CSV ou os metadados foram editados. Repor os ficheiros originais a partir do Git. |
+| `A recolha está incompleta` | Falta um dos três ficheiros de `data/input/`. |

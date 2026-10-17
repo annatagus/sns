@@ -1,0 +1,10 @@
+# Os ficheiros de data/ são verificados por SHA-256 nos notebooks (02 a 06).
+# O Git não deve converter os finais de linha (CRLF <-> LF): os bytes têm de
+# ficar exatamente iguais aos da recolha e da execução, em qualquer sistema.
+data/** -text
+
+# Imagens e modelos são sempre binários.
+*.png binary
+*.joblib binary
+*.zip binary
+*.pdf binary

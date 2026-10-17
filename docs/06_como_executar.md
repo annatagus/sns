@@ -1,40 +1,54 @@
-# Executar o 06 — Disponibilização
+# Fase 6 — Disponibilização: como executar
 
-O notebook cria uma página local de resultados, propostas de documentação e um pacote do projeto. Lê a avaliação do 05; não volta a treinar nem escolhe modelos.
+Notebook: [`notebooks/06_deployment.ipynb`](../notebooks/06_deployment.ipynb)
 
-## Antes de executar
+## Objetivo
 
-1. Colocar `06_deployment.ipynb` em `notebooks/`, na raiz do projeto que contém `data/`.
-2. Executar primeiro o **05 atualizado**, para que `data/output/sns_avaliacao_resumo.json` contenha as explicações e os exemplos dos cartões. Se já o executaste e apenas atualizaste esta documentação e o modelo de README do 06, não precisas de repetir o 05.
-3. Usar o mesmo kernel com `pandas` e `matplotlib`. Não é necessário scikit-learn nesta fase.
+Gerar a página de resultados autónoma, a documentação de atualização e o pacote ZIP do projeto. Lê a avaliação do 05; não faz nova recolha, previsão ou seleção de modelos.
 
-O 06 confere o resumo e os ficheiros avaliados no 05. As entradas de dados e previsões são apenas lidas. O notebook cria as pastas de resultados que faltarem.
+## Entradas
 
-## Gerar e consultar a página
+`data/output/sns_avaliacao_resumo.json` e todos os ficheiros avaliados no 05 (as assinaturas são verificadas antes de gerar a página). O resumo tem de incluir as explicações e os exemplos das hipóteses: se o notebook avisar que faltam, executar primeiro o 05.
 
-1. Fazer **Run All**.
-2. Abrir `docs/06_resultados_sns.html` com duplo clique num navegador. Se a página já estiver aberta, atualizar com **Ctrl + F5**.
-3. Experimentar os filtros de mês, região e ordenação. Conferir que alteram a tabela e os totais.
-4. Ler os quatro cartões das hipóteses e abrir **Ver detalhe técnico**. Os exemplos estão identificados como fictícios e separados dos resultados reais.
+## Saídas
 
-Os filtros não recalculam as hipóteses nem os gráficos: estes continuam a mostrar a análise global do período. O HTML contém os dados e as imagens; pode abrir sem instalação, servidor ou nova recolha.
+| Ficheiro | Conteúdo |
+|---|---|
+| `docs/06_resultados_sns.html` | Página autónoma: filtros por mês, região e ordenação, gráficos e cartões das hipóteses |
+| `docs/06_disponibilizacao_e_atualizacao.md` | Decisões de disponibilização e manutenção |
+| `docs/06_README_proposto.md`, `docs/06_requirements_propostos.txt` | Propostas geradas a partir da execução (o `README.md` e o `requirements.txt` da raiz não são substituídos) |
+| `docs/06_disponibilizacao_manifesto.json` | Lista e assinaturas dos ficheiros do pacote |
+| `data/analytics/06_*` | Gráficos da página, inventário e verificações |
+| `data/output/Projeto_SNS.zip` | Pacote local do projeto (só é criado se todos os ficheiros essenciais existirem; não é versionado) |
 
-## README, dependências e .gitignore
+## Executar
 
-O 06 preserva `README.md` e `requirements.txt` existentes. As propostas ficam em `docs/06_README_proposto.md` e `docs/06_requirements_propostos.txt`. Quando os ficheiros da raiz não existem, o notebook cria-os.
+1. Executar antes o 05.
+2. Selecionar o kernel do projeto e executar com **Run All**. Bibliotecas: `pandas` e `matplotlib`.
+3. Abrir `docs/06_resultados_sns.html` com duplo clique (se já estiver aberta, **Ctrl + F5**).
+4. Guardar todos os notebooks (**Ctrl + S**) e executar novamente a **última célula de código**, para o ZIP incluir as versões guardadas.
 
-A proposta de README inclui o curso AIDAPT-04 da cegid Academy, os responsáveis Raquel Cunha e Tiago Rodrigues e os seus perfis GitHub. O README fornecido nesta atualização já integra essa informação. Se tiveres acrescentado conteúdo próprio ao teu README, juntar os textos antes de o substituir.
+## Verificar a página
 
-O `.gitignore` base acompanha esta atualização. Copiá-lo para a raiz, ou integrar as suas regras num `.gitignore` próprio. O notebook inclui esse ficheiro no pacote quando existe, mas não o cria nem o altera. As regras excluem ambientes, caches, temporários, segredos de configuração e ZIP; mantêm os dados públicos, os resultados, os modelos e os notebooks disponíveis para versionamento. Ficheiros já seguidos pelo Git não deixam de o ser por adicionar uma regra.
+- Os filtros de mês, região e ordenação alteram a tabela e os totais.
+- Os quatro cartões das hipóteses mostram o resultado real, o exemplo fictício (identificado como tal) e o botão **Ver detalhe técnico**.
+- As hipóteses e os gráficos mostram o período completo: não mudam com os filtros.
 
-## Preparar o pacote final
+## Entrega
 
-1. Guardar os notebooks com **Ctrl + S** depois da execução.
-2. Voltar a executar a última célula de código do 06. Esta célula lê os ficheiros guardados em disco e atualiza o pacote `data/output/Projeto_SNS.zip` e o respetivo registo.
-3. Abrir o ZIP e confirmar os ficheiros esperados.
+O projeto é entregue pelo repositório GitHub ([annatagus/sns](https://github.com/annatagus/sns)). Antes do último *push*:
 
-O pacote completo reúne a versão local do projeto: notebooks, dados, código, documentação e imagens, com README e dependências. Exclui ambientes virtuais, caches, logs, ficheiros ocultos em geral e outros ZIP; o `.gitignore` da raiz é incluído explicitamente.
+1. Executar os notebooks 02 a 06 com **Run All** e guardá-los, para os outputs ficarem atualizados.
+2. Confirmar que o `.gitattributes` vai no commit e registar os ficheiros de `data/` sem conversão de finais de linha. O `.gitignore` já exclui os ZIP, mas o `Projeto_SNS.zip` continua seguido pelo Git até ser retirado:
 
-Se o inventário indicar ficheiros essenciais em falta, a página pode ficar disponível, mas o pacote completo não é criado. Colocar os ficheiros indicados no projeto e executar novamente a célula de inventário e a última célula.
+   ```bash
+   git rm --cached data/output/Projeto_SNS.zip
+   git add --renormalize .
+   git add -A
+   git commit -m "Versão final do projeto"
+   git push
+   ```
 
-Esta fase não publica o projeto num serviço externo. Mantêm-se as limitações da análise e as duas definições pendentes indicadas no README.
+3. Fazer um clone limpo numa pasta temporária e executar o `02` para confirmar que as assinaturas são aceites.
+
+Se o inventário indicar ficheiros essenciais em falta, a página fica criada mas o ZIP não: colocar os ficheiros indicados e executar novamente a célula de inventário e a última célula.

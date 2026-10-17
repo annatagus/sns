@@ -1,5 +1,7 @@
 # Fase 6 — Disponibilização e atualização
 
+> Ficheiro gerado automaticamente pelo notebook `06_deployment.ipynb`. Alterações manuais são substituídas na próxima execução.
+
 Produto: página local de resultados históricos, notebooks e pacote reproduzível. Período: 2024-01 a 2026-06. Recolha: 2026-10-13T17:20:14.911883+00:00.
 
 ## Decisões
@@ -8,7 +10,7 @@ Produto: página local de resultados históricos, notebooks e pacote reproduzív
 - Não faz novas previsões nem altera a seleção do 04. Disponibiliza a avaliação histórica e os limites conhecidos.
 - Dados e gráficos são gerados a partir das entradas conferidas do 05. Originais, modelos e métricas anteriores são apenas lidos.
 - README e requirements existentes são preservados; propostas ficam em docs para revisão. Quando não existem, são criados na raiz.
-- Pacote local reúne notebooks, dados, src, docs e media, com README/requirements. Ambientes e caches ficam de fora; o .gitignore, quando existir, é incluído. A documentação desta versão inclui um .gitignore base revisto. O notebook preserva o ficheiro existente; se ainda não existir no projeto local, copiar o fornecido com a atualização.
+- Pacote local reúne notebooks, dados, src, docs e media, com README/requirements. Ambientes e caches ficam de fora; o .gitignore, quando existir, é incluído. O notebook preserva o .gitignore existente.
 - A criação desta página não implica publicação externa. Qualquer atualização tem de indicar a recolha, as definições e o período.
 
 ## Manutenção

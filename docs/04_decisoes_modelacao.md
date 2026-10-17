@@ -1,5 +1,7 @@
 # Fase 4 — Modelação
 
+> Ficheiro gerado automaticamente pelo notebook `04_modeling.ipynb`. Alterações manuais são substituídas na próxima execução.
+
 Entrada: sns_csp_modelacao.csv, preparada no 03 e verificada contra o manifesto.
 
 ## Decisões

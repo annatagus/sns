@@ -1,15 +1,46 @@
-# Executar o 04_modeling
+# Fase 4 — Modelação: como executar
 
-1. Copiar notebooks/04_modeling.ipynb para notebooks/ do projeto.
-2. Confirmar data/output/sns_csp_modelacao.csv e data/output/sns_preparacao_manifesto.json, produzidos no 03. O ZIP inclui cópias destes dois ficheiros; se já tiveres os mesmos, não precisas de os substituir.
-3. Selecionar o mesmo kernel Python usado nos outros notebooks. Bibliotecas: pandas, numpy, matplotlib, scikit-learn e joblib. Se faltar alguma, usar uma célula com %pip install pandas numpy matplotlib scikit-learn joblib. Reiniciar o kernel se necessário.
-4. Fazer Run All. O notebook cria data/analytics/, data/models/ e docs/ se faltarem.
-5. Confirmar a tabela de validação, a seleção e as verificações finais.
+Notebook: [`notebooks/04_modeling.ipynb`](../notebooks/04_modeling.ipynb)
 
-O código de OneHotEncoder usa sparse_output, disponível em scikit-learn >= 1.2. A execução entregue foi verificada em scikit-learn 1.8.0; as restantes versões estão em data/models/04_execucao_modelacao.json. Para carregar os modelos guardados, usar preferencialmente o mesmo ambiente; executar novamente o notebook permite treinar na versão instalada.
+## Objetivo
 
-A fase 04 não calcula métricas do teste. Guarda as previsões e a seleção antes da avaliação no 05. Não mudar candidatos com base no teste. A referência é elegível para a escolha final.
+Comparar a referência simples (repetir o último valor) com uma regressão linear e duas configurações de Random Forest, escolher a abordagem pela **validação temporal** e guardar as previsões do teste — sem calcular ainda as métricas do teste.
 
-Ao repetir, atualiza apenas os resultados desta fase e os modelos com os nomes usados. Os dois ficheiros de entrada do 03 são apenas lidos. A seleção atual e os nomes dos modelos usados ficam registados em 04_selecao_modelo.json.
+## Entradas
 
-A modelação é histórica, sobre 38 séries completas do indicador antigo. Não constitui previsão atual do novo indicador de julho de 2026.
+- `data/output/sns_csp_modelacao.csv`
+- `data/output/sns_preparacao_manifesto.json`
+
+O notebook confirma que a assinatura do CSV coincide com a registada no manifesto do 03.
+
+## Saídas
+
+| Ficheiro | Conteúdo |
+|---|---|
+| `data/models/04_selecao_modelo.json` | Escolha feita na validação, antes de ver o teste |
+| `data/models/04_execucao_modelacao.json` | Versões das bibliotecas, parâmetros e assinaturas |
+| `data/models/04_regressao_linear.joblib`, `04_random_forest_*.joblib` | Pipelines treinadas no desenvolvimento completo |
+| `data/output/sns_previsoes_validacao.csv` | Previsões da validação |
+| `data/output/sns_previsoes_teste.csv` | Observados e previsões do teste, alinhados por unidade e mês |
+| `data/analytics/04_*.csv`, `04_mae_validacao.png` | Divisão temporal, métricas e verificações |
+| `docs/04_decisoes_modelacao.md` | Decisões da modelação (gerado pelo notebook) |
+
+## Divisão temporal (por mês-alvo)
+
+| Bloco | Meses-alvo | Linhas |
+|---|---|---:|
+| Treino inicial | 2024-05 a 2025-06 | 532 |
+| Validação | 2025-07 a 2025-12 | 228 |
+| Desenvolvimento completo | 2024-05 a 2025-12 | 760 |
+| Teste reservado | 2026-01 a 2026-06 | 228 |
+
+## Executar
+
+Selecionar o kernel do projeto e executar com **Run All**. Bibliotecas: `pandas`, `numpy`, `matplotlib`, `scikit-learn` (≥ 1.2, por causa de `sparse_output` no `OneHotEncoder`) e `joblib`. As versões usadas estão em `04_execucao_modelacao.json`; para carregar os `.joblib` guardados, usar de preferência as mesmas versões (`requirements.txt`).
+
+## Verificar
+
+- `04_verificacoes_execucao.csv`: todas as verificações com `passou = True`.
+- A seleção não deve mudar depois de ver o teste. A referência é elegível e foi a escolhida nesta execução.
+
+Ao repetir, os resultados desta fase são substituídos; as entradas do 03 são apenas lidas. Se o 03 mudar, executar novamente o 04 e depois o 05 e o 06.

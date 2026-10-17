@@ -1,5 +1,7 @@
 # Fase 3 — Decisões de preparação
 
+> Ficheiro gerado automaticamente pelo notebook `03_data_preparation.ipynb`. Alterações manuais são substituídas na próxima execução.
+
 Recolha: 2026-10-13T17:20:14.911883+00:00 (UTC). Fonte: https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/utentes-inscritos-em-cuidados-de-saude-primarios.
 
 - D01: 6450 linhas no histórico; 1170 no recorte de 2024-01 a 2026-06; 5280 fora do período. Brutos preservados.

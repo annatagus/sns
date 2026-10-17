@@ -1,15 +1,47 @@
-# Executar o 03_data_preparation
+# Fase 3 — Preparação dos dados: como executar
 
-1. Colocar o notebook em notebooks/ na pasta do projeto.
-2. Confirmar os três ficheiros da recolha do 02 em data/input/: utentes_csp_historico_bruto.csv, utentes_csp_metadados_api.json e utentes_csp_recolha.json.
-3. Selecionar um kernel Python com pandas e Jupyter/IPython. No ambiente local, se faltar pandas: python -m pip install pandas. Não é necessário matplotlib nesta fase.
-4. Executar Run All, por ordem, desde a primeira célula.
-5. Confirmar as verificações finais e os ficheiros em data/output/ e data/analytics/.
+Notebook: [`notebooks/03_data_preparation.ipynb`](../notebooks/03_data_preparation.ipynb)
 
-O ZIP contém uma cópia exata da recolha usada no 02, o notebook, os resultados já gerados e as notas. Copiar as pastas para o projeto existente, mantendo os notebooks 01 e 02. Não é preciso substituir a recolha que já tens se for a mesma. Se existir outra recolha, preservá-la separadamente: não misturar CSV e metadados de recolhas diferentes.
+## Objetivo
 
-O notebook cria data/output/, data/analytics/ e docs/ se faltarem. Requer a raiz com notebooks/ e data/. Não faz nova recolha nem depende de src/recolha_sns.py. Ao repetir, atualiza apenas os resultados desta fase; os três ficheiros de entrada são apenas lidos.
+Aplicar as decisões D01–D08 (recorte temporal, nomes e tipos, qualidade, continuidade, percentagens, faixas de dimensão, pares para previsão e taxas de consultas) e guardar os datasets tratados. Não faz nova recolha nem depende de `src/recolha_sns.py`.
 
-As contagens e datas nos outputs correspondem à recolha guardada de 13 de outubro de 2026. Se mudar a recolha, rever primeiro o 02 e as decisões de continuidade. O notebook interrompe se encontrar problemas de qualidade, meses em falta ou cobertura mensal diferente dos 39 registos esperados.
+## Entradas
 
-No 04, ler sns_csp_modelacao.csv com parse_dates=["mes", "mes_alvo"]. Ler a lista explícita de variáveis no sns_preparacao_manifesto.json. Nunca usar todas as colunas como entrada do modelo: alvo, mês-alvo, conjunto e previsão de referência são campos de avaliação/controlo.
+Os três ficheiros da recolha em `data/input/` (ver [02_como_executar.md](02_como_executar.md)). As assinaturas são verificadas antes de ler os dados.
+
+## Saídas
+
+| Ficheiro em `data/output/` | Uso |
+|---|---|
+| `sns_csp_principal.csv` | Todas as linhas do período principal (rankings e geografia) |
+| `sns_csp_series_completas.csv` | 38 séries com os 30 meses (evolução por unidade) |
+| `sns_csp_regional.csv` | Totais e percentagens ponderadas por região e mês |
+| `sns_csp_pares_mensais.csv` | Pares de meses consecutivos (referência simples) |
+| `sns_csp_modelacao.csv` | Pares com histórico completo, para os modelos |
+| `sns_faixas_dimensao.json` | Limites fixos das faixas de dimensão (H4) |
+| `sns_preparacao_manifesto.json` | Contagens, assinaturas, variáveis permitidas e pendências |
+
+Também: `data/analytics/03_*.csv` (verificações) e `docs/03_decisoes_preparacao.md` (gerado pelo notebook).
+
+## Executar
+
+Selecionar o kernel do projeto e executar com **Run All**. Biblioteca: `pandas`.
+
+## Verificar
+
+- `03_qualidade_historico.csv`: todas as verificações com 0 ocorrências.
+- `03_validacoes_finais.csv`: todas as verificações com `passou = True`.
+- `03_fluxo_registos.csv`: 6 450 linhas no histórico, 1 170 no recorte, 1 140 nas séries completas.
+
+O notebook **para com erro** se encontrar problemas de qualidade, meses em falta ou uma cobertura mensal diferente dos 39 registos esperados. Nesse caso, investigar antes de alterar o código: não corrigir valores silenciosamente.
+
+## Ler os resultados na fase seguinte
+
+Os CSV usam vírgula como separador e ponto decimal (UTF-8 com BOM). Para a modelação:
+
+```python
+pd.read_csv("data/output/sns_csp_modelacao.csv", parse_dates=["mes", "mes_alvo"])
+```
+
+Usar apenas as variáveis listadas no manifesto. O alvo, o mês-alvo, o conjunto e a previsão de referência são campos de controlo e nunca entram como preditores.

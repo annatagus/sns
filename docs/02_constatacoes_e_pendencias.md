@@ -1,5 +1,7 @@
 # Fase 2 — Constatações e decisões pendentes
 
+> Ficheiro gerado automaticamente pelo notebook `02_data_understanding.ipynb`. Alterações manuais são substituídas na próxima execução.
+
 Recolha: 2026-10-13T17:20:14.911883+00:00 (UTC).
 
 Histórico: 6450 linhas, 126 meses. Vista principal: 1170 linhas, 30 meses.
@@ -15,4 +17,4 @@ Esta fase preserva o bruto e usa cópias de exploração. O dataset tratado aind
 - Definir nomes de colunas, tipos e chave mensal do dataset preparado.
 - Investigar qualquer ocorrência dos checks antes de decidir corrigir, excluir ou manter.
 - Confirmar a definição das taxas de utilização de consultas de um ano antes de responder à Q5.
-- Reavaliar grupos pequenos da H4 e verificar a consistência temporal da comparação geográfica.
+- Reavaliar grupos pequenos da H4 e verificar a consistência temporal da comparação geográfica.
