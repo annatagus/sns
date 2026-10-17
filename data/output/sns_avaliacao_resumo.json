@@ -115,27 +115,43 @@
   "hipoteses": [
     {
       "id": "H1",
-      "hipotese": "Rankings por número e percentagem diferem",
-      "evidencia": "35 de 39 posições diferem; Spearman 0.938.",
-      "avaliacao": "sustentada no último mês"
+      "hipotese": "Mais pessoas afetadas e maior percentagem são coisas diferentes",
+      "evidencia": "Em 2026-06, 35 das 39 unidades mudam de posição quando usamos número ou percentagem. Mudar de posição não significa, por si só, que os rankings sejam completamente diferentes.",
+      "avaliacao": "A hipótese é sustentada no último mês; convém consultar os dois rankings.",
+      "explicacao": "Uma unidade pode ter mais inscritos sem médico, mas uma percentagem menor do seu total.",
+      "exemplo": "Uma unidade com 40 mil pessoas sem médico em 200 mil inscritos tem 20% sem médico. Outra com 20 mil em 50 mil tem 40%. A primeira tem mais pessoas afetadas; a segunda tem uma maior proporção afetada.",
+      "utilidade": "Perceber a dimensão do problema através das duas medidas e identificar situações que merecem atenção por motivos diferentes.",
+      "detalhe_tecnico": "Spearman entre os rankings: 0.938. Valores próximos de 1 indicam uma ordenação semelhante; uma troca de apenas uma posição já conta como diferença."
     },
     {
       "id": "H2",
-      "hipotese": "Evolução não uniforme",
-      "evidencia": "19 séries com redução e 19 com aumento; variações regionais diferentes.",
-      "avaliacao": "diferenças descritivas observadas"
+      "hipotese": "Algumas unidades melhoraram e outras pioraram",
+      "evidencia": "Entre 2024-01 e 2026-06, a percentagem de inscritos sem médico diminuiu em 19 unidades e aumentou em 19, nas 38 unidades com histórico completo.",
+      "avaliacao": "A evolução do conjunto pode esconder situações locais diferentes. Estes dados não explicam as causas das mudanças.",
+      "explicacao": "Comparamos a percentagem de inscritos sem médico no início e no fim do período, nas unidades com histórico completo.",
+      "exemplo": "Passar de 30% para 20% significa uma redução de 10 pontos percentuais. Passar de 20% para 30% representa um agravamento de igual dimensão.",
+      "utilidade": "Identificar unidades onde interessa investigar o que contribuiu para a melhoria ou para o agravamento.",
+      "detalhe_tecnico": "A evolução por unidade usa 38 séries completas. A correspondência territorial dos dois nomes da Póvoa/Vila do Conde continua por confirmar e não foi unida automaticamente. A comparação dos extremos não descreve cada subida ou descida mensal."
     },
     {
       "id": "H3",
-      "hipotese": "Crescimento dos inscritos associado ao aumento sem médico",
-      "evidencia": "Spearman das variações: 0.225, em 38 séries. A direção observada não demonstra causa nem uma relação mensal geral.",
-      "avaliacao": "evidência de associação limitada"
+      "hipotese": "Mais inscritos nem sempre significam maior percentagem sem médico",
+      "evidencia": "Encontrámos uma relação fraca entre as duas mudanças, com muitas exceções. A tendência foi para maior crescimento dos inscritos acompanhar maior aumento da percentagem sem médico.",
+      "avaliacao": "Esta comparação resume a mudança entre o início e o fim do período. Não demonstra que o crescimento tenha causado o agravamento, nem que a relação se repita todos os meses.",
+      "explicacao": "Nas 38 unidades com histórico completo, comparámos o crescimento do total de inscritos com a mudança na percentagem sem médico.",
+      "exemplo": "Uma unidade pode passar de 100 mil para 110 mil inscritos e de 20 mil para 22 mil sem médico. Há mais pessoas sem médico, mas a percentagem mantém-se nos 20%.",
+      "utilidade": "Perceber se as duas mudanças tendem a acompanhar-se e orientar uma investigação com mais informação.",
+      "detalhe_tecnico": "Spearman das variações: 0.225, em 38 séries. Compara as posições das unidades nas duas variações. A designação de relação fraca usa |Spearman| < 0,3 como referência descritiva; não foi feito um teste de significância."
     },
     {
       "id": "H4",
-      "hipotese": "Diferenças geográficas em unidades de dimensão semelhante",
-      "evidencia": "Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado.",
-      "avaliacao": "evidência descritiva condicionada"
+      "hipotese": "Comparar regiões em unidades de dimensão semelhante",
+      "evidencia": "A comparação usa a mediana: o valor central das percentagens das unidades de cada grupo. Em 2026-06, a maior diferença elegível foi de 37,58 pontos percentuais entre Lisboa e Vale do Tejo e Norte, na faixa intermédia. Foram comparados grupos de 6 e 4 unidades.",
+      "avaliacao": "Os grupos são pequenos. Ter dimensão semelhante não significa ter os mesmos recursos ou características. A comparação não demonstra que a região seja a causa da diferença.",
+      "explicacao": "Agrupámos as unidades pelo número de inscritos e comparámos regiões dentro das mesmas faixas de dimensão.",
+      "exemplo": "Se um grupo tiver um valor central de 40% e outro de 10%, a diferença é de 30 pontos percentuais. São grupos de unidades, não grupos de pessoas.",
+      "utilidade": "Identificar diferenças geográficas que merecem investigação, aproximando a dimensão das unidades comparadas.",
+      "detalhe_tecnico": "Há 7 combinações de duas regiões e uma faixa com grupos elegíveis durante os 30 meses. Exigimos pelo menos três unidades em cada grupo. Os limites das faixas são fixos, definidos em janeiro de 2024. A mediana das percentagens das unidades não é a percentagem regional calculada pelos totais. Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado."
     }
   ],
   "criterios": [

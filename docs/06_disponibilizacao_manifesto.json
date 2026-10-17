@@ -6,9 +6,9 @@
     "fim": "2026-06"
   },
   "recolhido_em_utc": "2026-10-13T17:20:14.911883+00:00",
-  "entrada_avaliacao_sha256": "3d1a7d16169c53ddb3088d0077469adcdbfd5f7950ef7534d294b714082bdaff",
+  "entrada_avaliacao_sha256": "b57928d1fc344ba297807fbc37cc788f8aa05a2b611a2409d7d92d06e26d72fd",
   "inputs_sha256": {
-    "data/output/sns_avaliacao_resumo.json": "3d1a7d16169c53ddb3088d0077469adcdbfd5f7950ef7534d294b714082bdaff",
+    "data/output/sns_avaliacao_resumo.json": "b57928d1fc344ba297807fbc37cc788f8aa05a2b611a2409d7d92d06e26d72fd",
     "data/output/sns_csp_principal.csv": "9c2afb369547e50bd90cf7fbdf822efa7274cd0bce4dd245207923404eb93317",
     "data/output/sns_csp_series_completas.csv": "0b8122033e8cc7f5458f9f44156024a1be7b92a50aa4541052efabf3e97be3fb",
     "data/output/sns_csp_regional.csv": "66c994dc4db2442c2fff88e98675bc4434f28326dcc2be58c03ee216c26d3295",
@@ -40,8 +40,8 @@
   "ficheiros": [
     {
       "caminho": ".gitignore",
-      "bytes": 4884,
-      "sha256": "b732f48c8c522ef421905ffa25c9d6710323fd5628d05191bad74a5ef27fd37c"
+      "bytes": 605,
+      "sha256": "b17db86e4eafdfbf9bfde6fa6f4b96bd025fc80a3ad0090f82f6b709eeb22a04"
     },
     {
       "caminho": "data/analytics/02_cobertura_por_mes.csv",
@@ -195,8 +195,8 @@
     },
     {
       "caminho": "data/analytics/05_avaliacao_hipoteses.csv",
-      "bytes": 966,
-      "sha256": "c8be44d733847dd53b358aac2403b8856f21937fd65aed7e365dff55febe720e"
+      "bytes": 4549,
+      "sha256": "5836a30d71bf5f630fbadeb82750ab45869dc098897d9872a1279f2e0cf38897"
     },
     {
       "caminho": "data/analytics/05_criterios_sucesso.csv",
@@ -320,8 +320,8 @@
     },
     {
       "caminho": "data/analytics/06_inventario_essencial.csv",
-      "bytes": 921,
-      "sha256": "6c3434403d603a2002b99cad216d168de4729e6e839d788c7ac665c39bfe9c0a"
+      "bytes": 922,
+      "sha256": "a3f68672b8144d075286f3b1ec74d97713e0a4721c24145b6257f2c64ac7a05e"
     },
     {
       "caminho": "data/analytics/06_validacoes_entrada.csv",
@@ -385,8 +385,8 @@
     },
     {
       "caminho": "data/output/sns_avaliacao_resumo.json",
-      "bytes": 9661,
-      "sha256": "3d1a7d16169c53ddb3088d0077469adcdbfd5f7950ef7534d294b714082bdaff"
+      "bytes": 13565,
+      "sha256": "b57928d1fc344ba297807fbc37cc788f8aa05a2b611a2409d7d92d06e26d72fd"
     },
     {
       "caminho": "data/output/sns_csp_modelacao.csv",
@@ -470,18 +470,18 @@
     },
     {
       "caminho": "docs/05_como_executar.md",
-      "bytes": 1786,
-      "sha256": "69cdabd16e89dcf2fd1401e1815f71cd751ccde5e0f16ec96896e0b2d563c2e3"
+      "bytes": 2796,
+      "sha256": "7f5b9c6471c283edc62f79498f7286942bbd38ae0465b0b20490eacc0445589f"
     },
     {
       "caminho": "docs/05_conclusoes_avaliacao.md",
-      "bytes": 3977,
-      "sha256": "d5f321833a3a005b3dc8bb7002b851d50dab9fe7174262a4308e7675bf598c69"
+      "bytes": 8169,
+      "sha256": "1559a4b61869af3f518f50e97dac3222717ed181ee97b1a4a49637b5e349b3e7"
     },
     {
       "caminho": "docs/06_como_executar.md",
-      "bytes": 1774,
-      "sha256": "7cd0b0f8eb98b933b479f095079a92abdb67732b040ed57462979c22cf033207"
+      "bytes": 3519,
+      "sha256": "805f725ee6e9168078ca1214925b8f3103e2d68d7216472ae3b69b98da8d5057"
     },
     {
       "caminho": "docs/06_disponibilizacao_e_atualizacao.md",
@@ -500,8 +500,8 @@
     },
     {
       "caminho": "docs/06_resultados_sns.html",
-      "bytes": 472807,
-      "sha256": "ca6732223b01e6414f8fb98217b88431e82b56bbfd7855bd5e43d091e2dcaf8f"
+      "bytes": 477958,
+      "sha256": "0909e3c023de17bc814910acafc9d2a889cbd42df2a4e345cb0956a600746212"
     },
     {
       "caminho": "docs/CA_AiDAPT4_Projeto_Enunciado_v2.pdf",
@@ -545,13 +545,13 @@
     },
     {
       "caminho": "notebooks/05_evaluation.ipynb",
-      "bytes": 466382,
-      "sha256": "809ca067bdc9a2a19ea414f81124d3bfdf1ffabb33384fc858a87f2e20dd4170"
+      "bytes": 478652,
+      "sha256": "408319731bff8020bc9e46fb198c28393c62cdfcbe18a08a89605b264560ff37"
     },
     {
       "caminho": "notebooks/06_deployment.ipynb",
-      "bytes": 46418,
-      "sha256": "7f78f6c2058c7c977f5b6d638d17d2e6b6402155ca50081ad73594e05ac9c7e5"
+      "bytes": 54336,
+      "sha256": "13c26bff77d5a0753d5d8435ec76a482088e37be2d8f9f06b44995d28a080901"
     },
     {
       "caminho": "notebooks/template_original/01_business_understanding.ipynb",
@@ -585,8 +585,8 @@
     },
     {
       "caminho": "README.md",
-      "bytes": 5736,
-      "sha256": "44be3131335908ec98a47662dc692cf60d0053b4c7601710b34f5688b95faf47"
+      "bytes": 7920,
+      "sha256": "171ea931c4b00bdb9e48fa1a7dff4dfcf449bff8dbbfe9d78b64758957d9d73b"
     },
     {
       "caminho": "requirements.txt",

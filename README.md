@@ -1,10 +1,19 @@
 # Cobertura de médico de família — SNS
 
-Análise independente dos inscritos nos cuidados de saúde primários em Portugal Continental, por unidade e região de saúde. O projeto compara o número e a percentagem de inscritos sem médico, acompanha a evolução e avalia previsões históricas a um mês.
+Este repositório contém o projeto prático desenvolvido no âmbito do curso **AIDAPT-04** da **cegid Academy**.
+
+## Responsáveis
+
+- **Raquel Cunha** — GitHub: [@annatagus](https://github.com/annatagus)
+- **Tiago Rodrigues** — GitHub: [@Tiago-Alex](https://github.com/Tiago-Alex)
+
+## Objetivo
+
+Análise dos inscritos nos cuidados de saúde primários em Portugal Continental, por unidade e região de saúde. O projeto compara o número e a percentagem de inscritos sem médico, acompanha a evolução e avalia previsões históricas a um mês.
 
 ## Consultar os resultados
 
-Abrir [a página de resultados](docs/06_resultados_sns.html) num navegador. Funciona localmente, sem servidor: permite escolher mês, região e ordenação dos rankings. A página inclui os dados da tabela e os gráficos.
+Abrir [a página de resultados](docs/06_resultados_sns.html) num navegador. Funciona localmente, sem servidor: permite escolher mês, região e ordenação dos rankings. A página inclui os dados da tabela e os gráficos. Os quatro cartões das hipóteses apresentam explicações em linguagem simples, resultados calculados na avaliação, exemplos fictícios e a utilidade das comparações. Os detalhes técnicos podem ser abertos em cada cartão. Os filtros alteram a tabela e os totais; as hipóteses e os gráficos continuam a representar o período global.
 
 Período principal: **2024-01 a 2026-06**. Recolha: 2026-10-13T13:34:39.656847+00:00 (UTC). Há 39 registos mensais no principal; a evolução por unidade e a previsão usam 38 séries completas.
 
@@ -57,7 +66,13 @@ Executar os notebooks por ordem, com Run All:
 
 O 02 reutiliza a recolha existente depois de verificar as assinaturas. Os restantes leem os ficheiros guardados; o 04 treina modelos. Os resultados gerados podem ser atualizados ao executar novamente cada fase. Se mudares uma fase, executar novamente as fases que dependem dela.
 
-O 06 guarda a página em `docs/06_resultados_sns.html` e prepara `data/output/Projeto_SNS.zip` quando os ficheiros essenciais estiverem presentes. O pacote reúne a versão local do projeto e exclui ambientes virtuais, caches e o próprio pacote.
+O 06 guarda a página em `docs/06_resultados_sns.html` e prepara `data/output/Projeto_SNS.zip` quando os ficheiros essenciais estiverem presentes. O pacote reúne a versão local do projeto e exclui ambientes virtuais, caches e o próprio pacote. Depois de Run All, guardar os notebooks com **Ctrl + S** e executar novamente a última célula do 06, para incluir no ZIP as versões guardadas.
+
+Se apenas atualizaste os textos dos cartões, executar o **05 atualizado e depois o 06**; não é necessário voltar a treinar o 04. Se a única alteração foi à documentação e ao modelo de README no 06, basta executar o **06** sobre a avaliação já gerada.
+
+O 06 preserva `README.md` e `requirements.txt` existentes e guarda propostas em `docs/`. O README desta versão já inclui os responsáveis e o curso. Numa nova recolha ou avaliação, comparar `docs/06_README_proposto.md` com o README da raiz e integrar as alterações necessárias.
+
+O `.gitignore` base exclui ambientes virtuais, caches, ficheiros temporários, configurações de segredos e pacotes ZIP. Os notebooks, os dados públicos, os resultados, os gráficos e os modelos do projeto continuam disponíveis para versionamento. O `.gitignore` não retira ficheiros que já estejam seguidos pelo Git.
 
 ## Interpretação e limites
 
@@ -74,3 +89,10 @@ O 06 guarda a página em `docs/06_resultados_sns.html` e prepara `data/output/Pr
 
 Se a fonte mudar, recolher para uma pasta separada e confirmar esquema, definições e territórios antes de atualizar a análise. Não substituir os brutos guardados sem preservar a recolha anterior. Para o indicador novo, definir um projeto/série próprios; não reaproveitar o teste antigo como avaliação independente depois de ajustar modelos com os seus resultados.
 
+
+## Por fazer
+
+- [ ] Confirmar a correspondência territorial entre as duas designações da Póvoa de Varzim/Vila do Conde antes de as ligar numa série única. A análise atual mantém essa limitação explícita.
+- [ ] Confirmar a janela exata das taxas de consultas de um ano antes de avaliar a Q5. As conclusões atuais não usam essas taxas.
+- [ ] Na versão local a entregar, abrir a página num navegador, experimentar os filtros e ler os quatro cartões, incluindo os detalhes técnicos.
+- [ ] Guardar os notebooks depois de executar, voltar a executar a última célula do 06 e conferir o ZIP final.

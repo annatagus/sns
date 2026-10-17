@@ -21,10 +21,62 @@ Seleção feita pela validação e mantida na avaliação. Mesmas unidades e mes
 - Q5: Não avaliada nesta versão: falta confirmar a janela exata do indicador de um ano. Taxas preservadas, sem conclusões sobre consultas. Estado: pendente de definição.
 - Q6: A referência teve MAE 0.417 pp. O melhor candidato aprendido escolhido na validação (Regressão linear) teve MAE 0.449 pp no teste. A escolha final do 04 foi Último valor e não superou a referência. O critério preditivo não foi cumprido; os resultados dos candidatos estão na tabela, sem nova seleção pelo teste. Estado: avaliada no teste reservado.
 
-- H1: 35 de 39 posições diferem; Spearman 0.938. Avaliação: sustentada no último mês.
-- H2: 19 séries com redução e 19 com aumento; variações regionais diferentes. Avaliação: diferenças descritivas observadas.
-- H3: Spearman das variações: 0.225, em 38 séries. A direção observada não demonstra causa nem uma relação mensal geral. Avaliação: evidência de associação limitada.
-- H4: Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado. Avaliação: evidência descritiva condicionada.
+
+### H1 — Mais pessoas afetadas e maior percentagem são coisas diferentes
+
+Uma unidade pode ter mais inscritos sem médico, mas uma percentagem menor do seu total.
+
+**O que encontrámos:** Em 2026-06, 35 das 39 unidades mudam de posição quando usamos número ou percentagem. Mudar de posição não significa, por si só, que os rankings sejam completamente diferentes.
+
+**Exemplo fictício:** Uma unidade com 40 mil pessoas sem médico em 200 mil inscritos tem 20% sem médico. Outra com 20 mil em 50 mil tem 40%. A primeira tem mais pessoas afetadas; a segunda tem uma maior proporção afetada.
+
+**Para que serve:** Perceber a dimensão do problema através das duas medidas e identificar situações que merecem atenção por motivos diferentes.
+
+**Como interpretar:** A hipótese é sustentada no último mês; convém consultar os dois rankings.
+
+**Detalhe técnico:** Spearman entre os rankings: 0.938. Valores próximos de 1 indicam uma ordenação semelhante; uma troca de apenas uma posição já conta como diferença.
+
+### H2 — Algumas unidades melhoraram e outras pioraram
+
+Comparamos a percentagem de inscritos sem médico no início e no fim do período, nas unidades com histórico completo.
+
+**O que encontrámos:** Entre 2024-01 e 2026-06, a percentagem de inscritos sem médico diminuiu em 19 unidades e aumentou em 19, nas 38 unidades com histórico completo.
+
+**Exemplo fictício:** Passar de 30% para 20% significa uma redução de 10 pontos percentuais. Passar de 20% para 30% representa um agravamento de igual dimensão.
+
+**Para que serve:** Identificar unidades onde interessa investigar o que contribuiu para a melhoria ou para o agravamento.
+
+**Como interpretar:** A evolução do conjunto pode esconder situações locais diferentes. Estes dados não explicam as causas das mudanças.
+
+**Detalhe técnico:** A evolução por unidade usa 38 séries completas. A correspondência territorial dos dois nomes da Póvoa/Vila do Conde continua por confirmar e não foi unida automaticamente. A comparação dos extremos não descreve cada subida ou descida mensal.
+
+### H3 — Mais inscritos nem sempre significam maior percentagem sem médico
+
+Nas 38 unidades com histórico completo, comparámos o crescimento do total de inscritos com a mudança na percentagem sem médico.
+
+**O que encontrámos:** Encontrámos uma relação fraca entre as duas mudanças, com muitas exceções. A tendência foi para maior crescimento dos inscritos acompanhar maior aumento da percentagem sem médico.
+
+**Exemplo fictício:** Uma unidade pode passar de 100 mil para 110 mil inscritos e de 20 mil para 22 mil sem médico. Há mais pessoas sem médico, mas a percentagem mantém-se nos 20%.
+
+**Para que serve:** Perceber se as duas mudanças tendem a acompanhar-se e orientar uma investigação com mais informação.
+
+**Como interpretar:** Esta comparação resume a mudança entre o início e o fim do período. Não demonstra que o crescimento tenha causado o agravamento, nem que a relação se repita todos os meses.
+
+**Detalhe técnico:** Spearman das variações: 0.225, em 38 séries. Compara as posições das unidades nas duas variações. A designação de relação fraca usa |Spearman| < 0,3 como referência descritiva; não foi feito um teste de significância.
+
+### H4 — Comparar regiões em unidades de dimensão semelhante
+
+Agrupámos as unidades pelo número de inscritos e comparámos regiões dentro das mesmas faixas de dimensão.
+
+**O que encontrámos:** A comparação usa a mediana: o valor central das percentagens das unidades de cada grupo. Em 2026-06, a maior diferença elegível foi de 37,58 pontos percentuais entre Lisboa e Vale do Tejo e Norte, na faixa intermédia. Foram comparados grupos de 6 e 4 unidades.
+
+**Exemplo fictício:** Se um grupo tiver um valor central de 40% e outro de 10%, a diferença é de 30 pontos percentuais. São grupos de unidades, não grupos de pessoas.
+
+**Para que serve:** Identificar diferenças geográficas que merecem investigação, aproximando a dimensão das unidades comparadas.
+
+**Como interpretar:** Os grupos são pequenos. Ter dimensão semelhante não significa ter os mesmos recursos ou características. A comparação não demonstra que a região seja a causa da diferença.
+
+**Detalhe técnico:** Há 7 combinações de duas regiões e uma faixa com grupos elegíveis durante os 30 meses. Exigimos pelo menos três unidades em cada grupo. Os limites das faixas são fixos, definidos em janeiro de 2024. A mediana das percentagens das unidades não é a percentagem regional calculada pelos totais. Há diferenças descritivas entre regiões dentro de faixas comuns; 7 pares são elegíveis nos 30 meses. No último mês, a maior diferença elegível foi 37.58 pp entre Lisboa e Vale do Tejo e Norte, na faixa intermedia (n=6 e n=4). Faixas aproximam dimensão; grupos pequenos e composição limitam a leitura. Sem efeito causal demonstrado.
 
 ## Decisão
 
