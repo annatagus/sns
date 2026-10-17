@@ -5,7 +5,7 @@ notebooks/03_data_preparation.ipynb,True,82247
 notebooks/04_modeling.ipynb,True,73794
 notebooks/05_evaluation.ipynb,True,478652
 notebooks/06_deployment.ipynb,True,54336
-README.md,True,7920
+README.md,True,7658
 requirements.txt,True,201
 src/recolha_sns.py,True,3299
 data/input/utentes_csp_historico_bruto.csv,True,764093

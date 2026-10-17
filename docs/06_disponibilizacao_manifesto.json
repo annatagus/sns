@@ -321,7 +321,7 @@
     {
       "caminho": "data/analytics/06_inventario_essencial.csv",
       "bytes": 922,
-      "sha256": "a3f68672b8144d075286f3b1ec74d97713e0a4721c24145b6257f2c64ac7a05e"
+      "sha256": "d6503d7d9fb61c65353486175195330ee95b88a43beed6be060d360227c58ee2"
     },
     {
       "caminho": "data/analytics/06_validacoes_entrada.csv",
@@ -485,13 +485,13 @@
     },
     {
       "caminho": "docs/06_disponibilizacao_e_atualizacao.md",
-      "bytes": 1729,
-      "sha256": "d6849817e48daf12f9cb5f0ed0e1c76d45dd57f00f13977222e55de1502c3265"
+      "bytes": 1862,
+      "sha256": "2ad6cdf4c6b822f05e4cb0753e1d72c8a9bea1dc5371400de18db52a8ef52b64"
     },
     {
       "caminho": "docs/06_README_proposto.md",
-      "bytes": 5733,
-      "sha256": "464446242a0f40fb8d20854824b869c9cb6d69d16db76b4b680387cb6186a9b5"
+      "bytes": 8017,
+      "sha256": "8889ef36d6dbe11f5422c3bf31e56e2d6a32f45ff41d107d756d53bb2ddee867"
     },
     {
       "caminho": "docs/06_requirements_propostos.txt",
@@ -585,8 +585,8 @@
     },
     {
       "caminho": "README.md",
-      "bytes": 7920,
-      "sha256": "171ea931c4b00bdb9e48fa1a7dff4dfcf449bff8dbbfe9d78b64758957d9d73b"
+      "bytes": 7658,
+      "sha256": "ec63a02b3395e62080b233a193b42d4d26fd889904782bd7b188f2b755dac7a8"
     },
     {
       "caminho": "requirements.txt",

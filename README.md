@@ -94,5 +94,3 @@ Se a fonte mudar, recolher para uma pasta separada e confirmar esquema, definiç
 
 - [ ] Confirmar a correspondência territorial entre as duas designações da Póvoa de Varzim/Vila do Conde antes de as ligar numa série única. A análise atual mantém essa limitação explícita.
 - [ ] Confirmar a janela exata das taxas de consultas de um ano antes de avaliar a Q5. As conclusões atuais não usam essas taxas.
-- [ ] Na versão local a entregar, abrir a página num navegador, experimentar os filtros e ler os quatro cartões, incluindo os detalhes técnicos.
-- [ ] Guardar os notebooks depois de executar, voltar a executar a última célula do 06 e conferir o ZIP final.
